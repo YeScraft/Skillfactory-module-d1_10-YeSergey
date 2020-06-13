@@ -130,7 +130,7 @@ def move(board_id):
                             break
                         for i, task in enumerate(task_data, 1):
                             task_base[i] = task['id']
-                            print('{}. {}\tID: {}'.format(i, task['name'], task['id']))
+                            print('{}. \t{}\tLastActivity: {}\tID: {}'.format(i, task['name'], task['dateLastActivity'], task['id']))
 
                         task_keys = list(task_base.keys())
 
